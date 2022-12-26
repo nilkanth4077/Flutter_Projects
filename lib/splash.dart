@@ -10,14 +10,15 @@ class Splash extends StatefulWidget {
 
 class _SplashState extends State<Splash> {
   @override
-  void initState(){
+  void initState() {
     super.initState();
     navigatetosignin();
   }
 
-  navigatetosignin() async{
+  navigatetosignin() async {
     await Future.delayed(Duration(milliseconds: 3000), () {});
-    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>SignInpage()));
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => SignInpage()));
   }
 
   @override
@@ -37,3 +38,5 @@ class _SplashState extends State<Splash> {
     );
   }
 }
+
+// Edit your splash screen as per your requirements
